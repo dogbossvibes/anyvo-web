@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+  ANYVO — Datenschutzerklärung (hostbare Fassung)
+  Diese Datei auf einer öffentlichen URL hosten (z. B. GitHub Pages, EAS Hosting,
+  Netlify) und die URL in App Store Connect + Google Play Console + im App-Footer
+  hinterlegen (Store-Audit P3). Inhaltlich synchron zur In-App-Seite app/privacy.tsx
+  (mit zwei Präzisierungen: KI-Datenumfang + Trainer-Weitergabe).
+-->
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANYVO — Datenschutzerklärung</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font-family: -apple-system, system-ui, Segoe UI, Roboto, sans-serif;
+           max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.6;
+           background: #0b0b0e; color: #e8e8ea; }
+    h1 { font-size: 28px; margin-bottom: 4px; }
+    .updated { color: #8b8b8b; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 18px; margin-top: 32px; color: #fff; }
+    p, li { color: #c9c9cf; }
+    a { color: #c8e11d; }
+    ul { padding-left: 20px; }
+  </style>
+</head>
+<body>
+  <h1>Datenschutzerklärung</h1>
+  <div class="updated">ANYVO · Stand: 3. Juni 2026</div>
+
+  <h2>1. Verantwortliche Stelle</h2>
+  <p>ANYVO · E-Mail: <a href="mailto:support@anyvo.app">support@anyvo.app</a><br>
+  Diese Datenschutzerklärung gilt für die ANYVO-App (iOS und Android).</p>
+
+  <h2>2. Welche Daten wir erheben</h2>
+  <ul>
+    <li>Konto: E-Mail-Adresse, optionaler Anzeigename, Rolle (Nutzer/Trainer)</li>
+    <li>Hunde: Name, Rasse, Geburtsdatum, Gewicht, Geschlecht, Foto</li>
+    <li>Trainingseinheiten: Datum, Sparte, Dauer, Bewertung, Notizen, Fotos, Videos, Sprachnotizen</li>
+    <li>Leistungsmetriken: Motivation, Konzentration, Präzision, Ausdauer, Trieblage, Impulskontrolle</li>
+    <li>Standort &amp; Wetter: Stadt/Region und Temperatur (nur mit deiner Berechtigung)</li>
+    <li>Push-Token: Gerätekennzeichen für Benachrichtigungen (nur mit deiner Erlaubnis)</li>
+  </ul>
+  <p>Wir erheben KEINE Tracking- oder Werbedaten und nutzen keine Analyse-SDKs.</p>
+
+  <h2>3. Zweck der Verarbeitung</h2>
+  <ul>
+    <li>Bereitstellung der Trainings-Tracking-Funktionen</li>
+    <li>KI-gestützte Analyse deiner Trainingsfortschritte (Claude, Anthropic)</li>
+    <li>Trainer-Betreuung (siehe Punkt 5)</li>
+    <li>Kommunikation bei Support-Anfragen</li>
+  </ul>
+
+  <h2>4. Drittanbieter</h2>
+  <p><strong>Supabase</strong> (USA) — Authentifizierung, Datenbank, Dateispeicher. Übertragung TLS-verschlüsselt.</p>
+  <p><strong>Anthropic</strong> (USA) — KI-Analyse. Beim Starten einer KI-Analyse werden Trainingsdaten der letzten Einheiten übermittelt: Metriken, Bewertungen, Dauer, <em>Notizen, Übungstitel und Hundename</em>. Es werden keine Kontodaten (E-Mail) übertragen.</p>
+  <p><strong>Open-Meteo</strong> (Schweiz) — Wetterdienst ohne API-Schlüssel. Es werden nur GPS-Koordinaten übermittelt; keine personenbezogenen Daten.</p>
+
+  <h2>5. Trainer-Betreuung &amp; Datenweitergabe</h2>
+  <p>Wenn du dich mit einer Trainer:in verbindest und eine Trainingseinheit ausdrücklich als „geteilt" markierst, kann diese Trainer:in die betreffende Einheit inkl. Übungen, Notizen, Medien und deinen Hundenamen einsehen sowie kommentieren. Du kannst die Freigabe pro Einheit widerrufen oder die Verbindung jederzeit trennen — danach besteht kein Zugriff mehr.</p>
+
+  <h2>6. Datenspeicherung &amp; Löschung</h2>
+  <p>Deine Daten werden gespeichert, solange dein Konto aktiv ist. Du kannst dein Konto und alle zugehörigen Daten jederzeit dauerhaft löschen (Einstellungen → Konto löschen). Eine Löschanfrage ist auch per E-Mail möglich.</p>
+
+  <h2>7. Deine Rechte</h2>
+  <p>Auskunft, Berichtigung, Löschung, Einschränkung, Datenportabilität. Anfragen an <a href="mailto:support@anyvo.app">support@anyvo.app</a>.</p>
+
+  <h2>8. Datensicherheit</h2>
+  <p>Alle Verbindungen sind TLS-verschlüsselt. Der Zugriff ist durch Row-Level Security (RLS) auf deinen Account beschränkt.</p>
+
+  <h2>9. Kinder</h2>
+  <p>ANYVO richtet sich nicht an Kinder unter 16 Jahren.</p>
+
+  <h2>10. Kontakt</h2>
+  <p><a href="mailto:support@anyvo.app">support@anyvo.app</a></p>
+</body>
+</html>
